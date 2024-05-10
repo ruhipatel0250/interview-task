@@ -23,12 +23,14 @@ $header_nav_menu = wp_nav_menu( [
 ] );
 global $wp;
 $URL = home_url( $wp->request );
-
+$location = get_field('location');
+$weather_data = do_shortcode('[weather location="'.$location.'"]');
 ?>
 <div class="top-bar">
     <div class="image">
         <img src="<?php echo $URL ?>/wp-content/uploads/2024/05/05.png">
     </div>
+    <?php echo $weather_data; ?>
 </div>
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>">
 
