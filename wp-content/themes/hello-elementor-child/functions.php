@@ -71,3 +71,31 @@ function custom_post_type() {
 }
 add_action( 'init', 'custom_post_type', 0 );
 
+// This Shortcode is use for display weather data
+function get_weather_data_shortcode($atts) {
+    $atts = shortcode_atts( array(
+        'location' => 'Ahmedabad', // Default location if not provided
+    ), $atts );
+
+    $location = $atts['location'];
+    $current_date = date('Y-m-d');
+    $API_KEY = "4VT43X4NY5EELSZVJ2UJ69KCP";
+    
+    $response = wp_remote_get( "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{$location}/{$current_date}/?unitGroup=metric&key={$API_KEY}&contentType=json" );
+
+    if ( is_wp_error( $response ) ) {
+        $error_message = $response->get_error_message();
+        return "Something went wrong: $error_message";
+    } else {
+        $body = wp_remote_retrieve_body( $response );
+        $data = json_decode($body, true);
+        $temperature = isset($data['currentConditions']['temp']) ? $data['currentConditions']['temp'] : '';  
+        $city_name = isset($data['resolvedAddress']) ? $data['resolvedAddress'] : '';
+
+        $output = '<div class="count">' . $temperature . '°C</div>';
+        $output .= '<div class="city">' . $city_name . '</div>';
+
+        return $output;
+    }
+}
+add_shortcode('weather', 'get_weather_data_shortcode');
