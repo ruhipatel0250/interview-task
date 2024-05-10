@@ -1,0 +1,298 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 3.0.1.1715317106
+Updated: 2024-05-10 04:58:26
+
+*/
+
+
+
+
+.main-header-class {
+    box-shadow: -1px 1px 7px lightblue;
+}
+.site-navigation ul.menu li a {
+    color: #000;
+    font-weight: bold;
+}
+.top-bar {
+    background: #000;
+    color: #fff;
+    padding: 0 10px;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.icon img {
+    max-width: 31px;
+    margin-right: 10px;
+}
+.weather {
+    margin-right: 10px;
+}
+header#site-header {
+    position: relative;
+}
+.mobile-menu-close, .mobile-menu{
+    display: none;
+}
+.hero-section {
+    min-height: 400px;
+    background: #000;
+}
+.contact-form {
+    box-shadow: -1px 1px 7px lightblue;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contact-form label {
+    width: 100% !important;
+}
+.d-flex-form .inner-form {
+    width: 50%;
+    padding: 10px;
+}
+.d-flex-form {
+    display: flex;
+}
+.inner-padding{
+    padding: 10px;
+}
+header#site-header {
+    box-shadow: -1px 1px 7px lightblue;
+}
+footer#site-footer {
+    box-shadow: -1px 1px 7px lightblue;
+}
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background: #000;
+    color: #fff;
+}
+.top-bar .image {
+    max-width: 30px;
+    margin-right: 10px;
+}
+.top-bar .count {
+    margin-right: 10px;
+}
+.main-post-divd {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.main-post-divd {
+    display: flex;
+}
+.main-post-divd .left-side {
+    width: 70%;
+    padding-right: 40px;
+}
+.main-post-divd .right-side{
+    width: 30%;
+}
+.project-date, .client-name, .project_category {
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 500;
+}
+span.diff-fonts {
+    font-weight: 400;
+}
+.inner-main-div {
+    box-shadow: -1px 1px 7px lightblue;
+    padding: 20px;
+}
+.title-project {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    display: none;
+}
+.slide-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    text-align: center;
+    padding: 1rem;
+}
+.slide-title {
+    width: 100%;
+    max-width: 50rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.slide-desc {
+    width: 100%;
+    max-width: 50rem;
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.slide-btn {
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+}
+.slide-btn:hover {
+    gap: 1rem;
+}
+.slide-number-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: rgba(211, 211, 211, 0.788);
+    letter-spacing: 0.2rem;
+}
+.slide-number-container hr {
+    width: 3rem;
+    transform: rotate(130deg);
+    border-color: rgba(211, 211, 211, 0.788);
+}
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.slider-nav-btn {
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.226);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.3s;
+}
+.slider-nav-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(211, 211, 211, 0.226);
+    border-radius: 50%;
+    display: inline-block;
+    transition: ease 0.3s;
+}
+.active,
+.dot:hover {
+    background-color: white;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+from {
+    opacity: 0.8;
+}
+to {
+    opacity: 1;
+}
+}
+img.custom-logo {
+    width: 200px;
+    margin-top: 3px;
+}
+@media only screen and (max-width: 1200px){
+    .main-post-divd{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .slide-btn{
+        margin-top: 1rem;
+    }
+    .main-post-divd{
+        display: flex;
+        margin-top: 20px;
+        flex-flow: column-reverse;
+    }
+    .left-side, .right-side{
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+    .d-flex-form{
+        flex-flow: wrap;
+    }
+    .d-flex-form .inner-form {
+        width: 100%;
+        padding: 10px;
+    }
+    .elementor-element.elementor-element-30f15991.contact-form.elementor-widget.elementor-widget-shortcode {
+        padding: 10px;
+    }
+    .slide-title{
+        font-size: 2rem;
+    }
+}
